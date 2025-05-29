@@ -1,0 +1,18 @@
+services:
+  postgresql:
+    image: postgres:17.5
+    ports:
+      - "55432:5432"
+    environment:
+      POSTGRES_DB: ducklake
+      POSTGRES_USER: ducklake
+      POSTGRES_PASSWORD: 123456
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: server --console-address ":9001" /data
