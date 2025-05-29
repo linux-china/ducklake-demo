@@ -3,6 +3,8 @@ DuckLake demo
 
 DuckLake is an integrated data lake and catalog format.
 
+![DuckLake Specification](https://ducklake.select/images/manifesto/ducklake-schema-1.png)
+
 # Features
 
 * PostgreSQL database for metadata storage
