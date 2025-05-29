@@ -18,7 +18,7 @@ DuckLake is an integrated data lake and catalog format.
 - lake2: a lake with DuckDB and Local File System
 - lake2: a lake with PostgreSQL and MinIO
 
-Please refer [justfile](./justfile) for commands.
+Please refer to [justfile](./justfile) for commands.
 
 # Getting Started
 
