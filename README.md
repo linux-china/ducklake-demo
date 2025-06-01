@@ -29,3 +29,4 @@ Please refer to [justfile](./justfile) for commands.
 # References
 
 * [DuckLake](https://ducklake.select/)
+* Welcome to the age of $10/month Lakehouses: https://tobilg.com/the-age-of-10-dollar-a-month-lakehouses
