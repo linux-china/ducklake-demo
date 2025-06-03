@@ -31,3 +31,4 @@ Please refer to [justfile](./justfile) for commands.
 * [DuckLake](https://ducklake.select/)
 * Welcome to the age of $10/month Lakehouses: https://tobilg.com/the-age-of-10-dollar-a-month-lakehouses
 * Learn How to Use DuckLake with DuckDB to Build Datalakes on S3: https://medium.com/@shahsoumil519/learn-how-to-use-ducklake-with-duckdb-to-build-iceberg-tables-on-s3-274ca0495261
+* DuckLake: This is your Data Lake on ACID https://www.definite.app/blog/ducklake
