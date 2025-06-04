@@ -5,6 +5,10 @@ DuckLake is an integrated data lake and catalog format.
 
 ![DuckLake Specification](https://ducklake.select/images/manifesto/ducklake-schema-1.png)
 
+DuckLake architecture: 
+
+![DuckLake Architecture](./ducklake-architecture.png)
+
 # Features
 
 * PostgreSQL database for metadata storage
