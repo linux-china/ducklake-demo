@@ -18,20 +18,24 @@ CREATE TABLE ducklake_snapshot_changes
 );
 CREATE TABLE ducklake_schema
 (
-    schema_id      BIGINT PRIMARY KEY,
-    schema_uuid    UUID,
-    begin_snapshot BIGINT,
-    end_snapshot   BIGINT,
-    schema_name    VARCHAR
+    schema_id        BIGINT PRIMARY KEY,
+    schema_uuid      UUID,
+    begin_snapshot   BIGINT,
+    end_snapshot     BIGINT,
+    schema_name      VARCHAR,
+    path             VARCHAR DEFAULT '',
+    path_is_relative BOOLEAN DEFAULT TRUE
 );
 CREATE TABLE ducklake_table
 (
-    table_id       BIGINT,
-    table_uuid     UUID,
-    begin_snapshot BIGINT,
-    end_snapshot   BIGINT,
-    schema_id      BIGINT,
-    table_name     VARCHAR
+    table_id         BIGINT,
+    table_uuid       UUID,
+    begin_snapshot   BIGINT,
+    end_snapshot     BIGINT,
+    schema_id        BIGINT,
+    table_name       VARCHAR,
+    path             VARCHAR DEFAULT '',
+    path_is_relative BOOLEAN DEFAULT TRUE
 );
 CREATE TABLE ducklake_view
 (
