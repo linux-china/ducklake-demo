@@ -37,3 +37,4 @@ Please refer to [justfile](./justfile) for commands.
 * Learn How to Use DuckLake with DuckDB to Build Datalakes on S3: https://medium.com/@shahsoumil519/learn-how-to-use-ducklake-with-duckdb-to-build-iceberg-tables-on-s3-274ca0495261
 * DuckLake: This is your Data Lake on ACID https://www.definite.app/blog/ducklake
 * Digging into Ducklake: https://rmoff.net/2025/06/02/digging-into-ducklake/
+* From DuckDB to DuckHouse: https://juhache.substack.com/p/from-duckdb-to-duckhouse
