@@ -30,6 +30,19 @@ Please refer to [justfile](./justfile) for commands.
 - Use DuckDB CLI to create a new lake: `duckdb --cmd "ATTACH 'ducklake:lakes/lake2.ducklake' AS lake2; use lake2;"`
 - Create `city` table from [demo.sql](./demo.sql)
 
+# PostgreSQL as catalog metadata store
+
+With `public` schema by default: 
+
+```
+ATTACH 'ducklake:postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456' as lake3 (DATA_PATH 's3://lake3');
+```
+
+Assigned schema: 
+```
+ATTACH 'ducklake:postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456' as lake3 (DATA_PATH 's3://lake3', METADATA_SCHEMA 'ducklake');
+```
+
 # References
 
 * [DuckLake](https://ducklake.select/)
