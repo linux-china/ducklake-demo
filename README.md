@@ -51,3 +51,6 @@ ATTACH 'ducklake:postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklak
 * DuckLake: This is your Data Lake on ACID https://www.definite.app/blog/ducklake
 * Digging into Ducklake: https://rmoff.net/2025/06/02/digging-into-ducklake/
 * From DuckDB to DuckHouse: https://juhache.substack.com/p/from-duckdb-to-duckhouse
+* Getting Started with DuckLake: A New Table Format for Your Lakehouse: https://motherduck.com/blog/getting-started-ducklake-table-format/
+* Homemade Change Data Capture into DuckLake: https://medium.com/@wergstatt/homemade-change-data-capture-into-your-private-lake-e4978ebc23a7
+* DuckDB enters the Lake House race: https://dataengineeringcentral.substack.com/p/duckdb-enters-the-lake-house-race
