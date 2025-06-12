@@ -43,6 +43,31 @@ Assigned schema:
 ATTACH 'ducklake:postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456' as lake3 (DATA_PATH 's3://lake3', METADATA_SCHEMA 'ducklake');
 ```
 
+Secret style:
+
+```sql
+-- secret for MinIO
+create secret ducklake_oss (
+       type s3, 
+       key_id 'minioadmin', 
+       secret 'minioadmin', 
+       endpoint '127.0.0.1:9000', 
+       use_ssl false, 
+       url_style 'path'
+);
+       
+CREATE SECRET catalog1 (
+	TYPE DUCKLAKE,
+	METADATA_PATH 'postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456',
+	DATA_PATH 's3://lake1',
+    METADATA_SCHEMA 'ducklake'	
+);
+
+ATTACH 'ducklake:catalog1' AS catalog1;
+
+```
+
+**Attention**: Please refer [Add support for using secrets to manage DuckLake options and credentials](https://github.com/duckdb/ducklake/pull/200)
 # References
 
 * [DuckLake](https://ducklake.select/)
