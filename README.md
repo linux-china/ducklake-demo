@@ -93,3 +93,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * Homemade Change Data Capture into
   DuckLake: https://medium.com/@wergstatt/homemade-change-data-capture-into-your-private-lake-e4978ebc23a7
 * DuckDB enters the Lake House race: https://dataengineeringcentral.substack.com/p/duckdb-enters-the-lake-house-race
+* Get your data ducks in a row with DuckLake: https://www.tigrisdata.com/blog/ducklake/
