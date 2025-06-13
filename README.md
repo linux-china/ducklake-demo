@@ -5,7 +5,7 @@ DuckLake is an integrated data lake and catalog format.
 
 ![DuckLake Specification](https://ducklake.select/images/manifesto/ducklake-schema-1.png)
 
-DuckLake architecture: 
+DuckLake architecture:
 
 ![DuckLake Architecture](./ducklake-architecture.png)
 
@@ -32,13 +32,14 @@ Please refer to [justfile](./justfile) for commands.
 
 # PostgreSQL as catalog metadata store
 
-With `public` schema by default: 
+With `public` schema by default:
 
 ```
 ATTACH 'ducklake:postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456' as lake3 (DATA_PATH 's3://lake3');
 ```
 
-Assigned schema: 
+Assigned schema:
+
 ```
 ATTACH 'ducklake:postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456' as lake3 (DATA_PATH 's3://lake3', METADATA_SCHEMA 'ducklake');
 ```
@@ -47,7 +48,8 @@ Secret style:
 
 ```sql
 -- secret for MinIO
-create secret ducklake_oss (
+create
+secret ducklake_oss (
        type s3, 
        key_id 'minioadmin', 
        secret 'minioadmin', 
@@ -56,26 +58,38 @@ create secret ducklake_oss (
        url_style 'path'
 );
        
-CREATE SECRET catalog1 (
+CREATE
+SECRET catalog1 (
 	TYPE DUCKLAKE,
 	METADATA_PATH 'postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456',
 	DATA_PATH 's3://lake1',
     METADATA_SCHEMA 'ducklake'	
 );
 
-ATTACH 'ducklake:catalog1' AS catalog1;
+ATTACH
+'ducklake:catalog1' AS catalog1;
 
 ```
 
-**Attention**: Please refer [Add support for using secrets to manage DuckLake options and credentials](https://github.com/duckdb/ducklake/pull/200)
+**Attention**: Please
+refer [Add support for using secrets to manage DuckLake options and credentials](https://github.com/duckdb/ducklake/pull/200)
+
+# Ducklake Friends
+
+* [Neon](https://neon.com/): Ship faster with Postgres
+* [Tigris](https://tigrisdata.com/): Globally Distributed S3-Compatible Object Storage
+
 # References
 
 * [DuckLake](https://ducklake.select/)
 * Welcome to the age of $10/month Lakehouses: https://tobilg.com/the-age-of-10-dollar-a-month-lakehouses
-* Learn How to Use DuckLake with DuckDB to Build Datalakes on S3: https://medium.com/@shahsoumil519/learn-how-to-use-ducklake-with-duckdb-to-build-iceberg-tables-on-s3-274ca0495261
+* Learn How to Use DuckLake with DuckDB to Build Datalakes on
+  S3: https://medium.com/@shahsoumil519/learn-how-to-use-ducklake-with-duckdb-to-build-iceberg-tables-on-s3-274ca0495261
 * DuckLake: This is your Data Lake on ACID https://www.definite.app/blog/ducklake
 * Digging into Ducklake: https://rmoff.net/2025/06/02/digging-into-ducklake/
 * From DuckDB to DuckHouse: https://juhache.substack.com/p/from-duckdb-to-duckhouse
-* Getting Started with DuckLake: A New Table Format for Your Lakehouse: https://motherduck.com/blog/getting-started-ducklake-table-format/
-* Homemade Change Data Capture into DuckLake: https://medium.com/@wergstatt/homemade-change-data-capture-into-your-private-lake-e4978ebc23a7
+* Getting Started with DuckLake: A New Table Format for Your
+  Lakehouse: https://motherduck.com/blog/getting-started-ducklake-table-format/
+* Homemade Change Data Capture into
+  DuckLake: https://medium.com/@wergstatt/homemade-change-data-capture-into-your-private-lake-e4978ebc23a7
 * DuckDB enters the Lake House race: https://dataengineeringcentral.substack.com/p/duckdb-enters-the-lake-house-race
