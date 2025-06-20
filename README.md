@@ -9,6 +9,18 @@ DuckLake architecture:
 
 ![DuckLake Architecture](./ducklake-architecture.png)
 
+# OpenTable Format
+
+![OpenTable Format](./open-table-format.png)
+
+OpenTable format traits:
+
+- Reliable ACID transactions
+- Advanced data skipping
+- Time travel
+- Schema enforcement and evolution
+- Full CRUD operations
+
 # Features
 
 * PostgreSQL database for metadata storage
@@ -94,3 +106,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
   DuckLake: https://medium.com/@wergstatt/homemade-change-data-capture-into-your-private-lake-e4978ebc23a7
 * DuckDB enters the Lake House race: https://dataengineeringcentral.substack.com/p/duckdb-enters-the-lake-house-race
 * Get your data ducks in a row with DuckLake: https://www.tigrisdata.com/blog/ducklake/
+* Understanding Open Table Formats: https://delta.io/blog/open-table-formats/
