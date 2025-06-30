@@ -107,3 +107,6 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * DuckDB enters the Lake House race: https://dataengineeringcentral.substack.com/p/duckdb-enters-the-lake-house-race
 * Get your data ducks in a row with DuckLake: https://www.tigrisdata.com/blog/ducklake/
 * Understanding Open Table Formats: https://delta.io/blog/open-table-formats/
+* Data Time Travel with DuckLake and Tigris: https://www.tigrisdata.com/blog/ducklake-time-travel/
+* Extract data from Databases into DuckLake: https://blog.slingdata.io/extract-data-from-databases-into-ducklake
+* Thinking about DuckLake Architecture: https://www.linkedin.com/pulse/thinking-ducklake-architecture-miguel-peredo-z%C3%BCrcher-lt5ff/
