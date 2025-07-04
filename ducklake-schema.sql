@@ -1,7 +1,9 @@
 CREATE TABLE ducklake_metadata
 (
-    key   VARCHAR NOT NULL,
-    value VARCHAR NOT NULL
+    key      VARCHAR NOT NULL,
+    value    VARCHAR NOT NULL,
+    scope    VARCHAR,
+    scope_id BIGINT
 );
 CREATE TABLE ducklake_snapshot
 (
@@ -82,7 +84,8 @@ CREATE TABLE ducklake_data_file
     row_id_start      BIGINT,
     partition_id      BIGINT,
     encryption_key    VARCHAR,
-    partial_file_info VARCHAR
+    partial_file_info VARCHAR,
+    mapping_id        BIGINT
 );
 CREATE TABLE ducklake_file_column_statistics
 (
@@ -176,4 +179,17 @@ CREATE TABLE ducklake_inlined_data_tables
     table_name      VARCHAR,
     schema_snapshot BIGINT
 );
-
+CREATE TABLE ducklake_column_mapping
+(
+    mapping_id BIGINT,
+    table_id   BIGINT,
+    type       VARCHAR
+);
+CREATE TABLE ducklake_name_mapping
+(
+    mapping_id      BIGINT,
+    column_id       BIGINT,
+    source_name     VARCHAR,
+    target_field_id BIGINT,
+    parent_column   BIGINT
+);
