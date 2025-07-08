@@ -110,3 +110,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * Data Time Travel with DuckLake and Tigris: https://www.tigrisdata.com/blog/ducklake-time-travel/
 * Extract data from Databases into DuckLake: https://blog.slingdata.io/extract-data-from-databases-into-ducklake
 * Thinking about DuckLake Architecture: https://www.linkedin.com/pulse/thinking-ducklake-architecture-miguel-peredo-z%C3%BCrcher-lt5ff/
+* Building a Complete DuckLake Solution: From Local Development to Cloud Production: https://cfocoder.com/building-a-complete-ducklake-solution-from-local-development-to-cloud-production/
