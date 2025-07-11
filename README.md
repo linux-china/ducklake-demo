@@ -99,6 +99,7 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
   S3: https://medium.com/@shahsoumil519/learn-how-to-use-ducklake-with-duckdb-to-build-iceberg-tables-on-s3-274ca0495261
 * DuckLake: This is your Data Lake on ACID https://www.definite.app/blog/ducklake
 * Digging into Ducklake: https://rmoff.net/2025/06/02/digging-into-ducklake/
+* DuckLake — DB over File sprawl: https://medium.com/dev-genius/ducklake-db-over-file-sprawl-6613e5c07028
 * From DuckDB to DuckHouse: https://juhache.substack.com/p/from-duckdb-to-duckhouse
 * Getting Started with DuckLake: A New Table Format for Your
   Lakehouse: https://motherduck.com/blog/getting-started-ducklake-table-format/
