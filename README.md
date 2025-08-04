@@ -112,3 +112,7 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * Extract data from Databases into DuckLake: https://blog.slingdata.io/extract-data-from-databases-into-ducklake
 * Thinking about DuckLake Architecture: https://www.linkedin.com/pulse/thinking-ducklake-architecture-miguel-peredo-z%C3%BCrcher-lt5ff/
 * Building a Complete DuckLake Solution: From Local Development to Cloud Production: https://cfocoder.com/building-a-complete-ducklake-solution-from-local-development-to-cloud-production/
+* Introducing target-ducklake: A Meltano Target For Ducklake - https://www.definite.app/blog/target-ducklake
+* DuckLake on Apache Superset: https://medium.com/data-analytics-at-nesta/ducklake-on-apache-superset-d1b1b00c222a
+* DuckLake for busy engineering managers: https://blog.incrementalforgetting.tech/p/ducklake-for-busy-engineering-managers
+
