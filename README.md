@@ -115,4 +115,5 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * Introducing target-ducklake: A Meltano Target For Ducklake - https://www.definite.app/blog/target-ducklake
 * DuckLake on Apache Superset: https://medium.com/data-analytics-at-nesta/ducklake-on-apache-superset-d1b1b00c222a
 * DuckLake for busy engineering managers: https://blog.incrementalforgetting.tech/p/ducklake-for-busy-engineering-managers
+* What is DuckLake? The New Open Table Format Explained https://estuary.dev/blog/what-is-ducklake/
 
