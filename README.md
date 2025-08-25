@@ -116,4 +116,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * DuckLake on Apache Superset: https://medium.com/data-analytics-at-nesta/ducklake-on-apache-superset-d1b1b00c222a
 * DuckLake for busy engineering managers: https://blog.incrementalforgetting.tech/p/ducklake-for-busy-engineering-managers
 * What is DuckLake? The New Open Table Format Explained https://estuary.dev/blog/what-is-ducklake/
-
+* Introducing DuckLake: Lakehouse Architecture Reimagined for the Modern Era - https://endjin.com/blog/2025/06/introducing-ducklake-lakehouse-architecture-reimagined-modern-era
