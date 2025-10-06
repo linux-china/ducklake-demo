@@ -118,3 +118,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * What is DuckLake? The New Open Table Format Explained https://estuary.dev/blog/what-is-ducklake/
 * Introducing DuckLake: Lakehouse Architecture Reimagined for the Modern Era - https://endjin.com/blog/2025/06/introducing-ducklake-lakehouse-architecture-reimagined-modern-era
 * How Tables Grew a Brain: Iceberg, Hudi, Delta, Paimon, DuckLake https://medium.com/fresha-data-engineering/how-tables-grew-a-brain-iceberg-hudi-delta-paimon-ducklake-a617f34da6ce
+* DuckLake by DuckDB Labs: https://www.ssp.sh/brain/ducklake/
