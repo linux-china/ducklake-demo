@@ -119,3 +119,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * Introducing DuckLake: Lakehouse Architecture Reimagined for the Modern Era - https://endjin.com/blog/2025/06/introducing-ducklake-lakehouse-architecture-reimagined-modern-era
 * How Tables Grew a Brain: Iceberg, Hudi, Delta, Paimon, DuckLake https://medium.com/fresha-data-engineering/how-tables-grew-a-brain-iceberg-hudi-delta-paimon-ducklake-a617f34da6ce
 * DuckLake by DuckDB Labs: https://www.ssp.sh/brain/ducklake/
+* DuckLake: Learning from Cloud Data Warehouses to Build a Robust "Lakehouse": https://www.youtube.com/watch?v=z2GhznqtIz0
