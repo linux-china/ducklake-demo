@@ -62,20 +62,20 @@ Secret style:
 -- secret for MinIO
 create
 secret ducklake_oss (
-       type s3, 
-       key_id 'minioadmin', 
-       secret 'minioadmin', 
-       endpoint '127.0.0.1:9000', 
-       use_ssl false, 
+       type s3,
+       key_id 'minioadmin',
+       secret 'minioadmin',
+       endpoint '127.0.0.1:9000',
+       use_ssl false,
        url_style 'path'
 );
-       
+
 CREATE
 SECRET catalog1 (
 	TYPE DUCKLAKE,
 	METADATA_PATH 'postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456',
 	DATA_PATH 's3://lake1',
-    METADATA_SCHEMA 'ducklake'	
+    METADATA_SCHEMA 'ducklake'
 );
 
 ATTACH
@@ -120,3 +120,5 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * How Tables Grew a Brain: Iceberg, Hudi, Delta, Paimon, DuckLake https://medium.com/fresha-data-engineering/how-tables-grew-a-brain-iceberg-hudi-delta-paimon-ducklake-a617f34da6ce
 * DuckLake by DuckDB Labs: https://www.ssp.sh/brain/ducklake/
 * DuckLake: Learning from Cloud Data Warehouses to Build a Robust "Lakehouse": https://www.youtube.com/watch?v=z2GhznqtIz0
+* Tech Review: DuckLake - From Parquet to Powerhouse: https://thefulldatastack.substack.com/p/tech-review-ducklake-from-parquet
+* Is DuckLake a Step Backward? https://www.pracdata.io/p/is-ducklake-a-step-backward
