@@ -122,3 +122,6 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * DuckLake: Learning from Cloud Data Warehouses to Build a Robust "Lakehouse": https://www.youtube.com/watch?v=z2GhznqtIz0
 * Tech Review: DuckLake - From Parquet to Powerhouse: https://thefulldatastack.substack.com/p/tech-review-ducklake-from-parquet
 * Is DuckLake a Step Backward? https://www.pracdata.io/p/is-ducklake-a-step-backward
+* Building a DuckLake ... Open Source Style:  https://dataengineeringcentral.substack.com/p/building-a-ducklake-open-source-style
+* How to Create Your Own Vector Data Warehouse with Ducklake: Part 2- Deployment: https://towardsdev.com/how-to-create-your-own-vector-data-warehouse-with-ducklake-part-2-deployment-5af459b8eb29
+* DuckLake by DuckDB Labs: https://www.ssp.sh/brain/ducklake/
