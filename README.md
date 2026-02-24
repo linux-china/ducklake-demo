@@ -125,3 +125,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * Building a DuckLake ... Open Source Style:  https://dataengineeringcentral.substack.com/p/building-a-ducklake-open-source-style
 * How to Create Your Own Vector Data Warehouse with Ducklake: Part 2- Deployment: https://towardsdev.com/how-to-create-your-own-vector-data-warehouse-with-ducklake-part-2-deployment-5af459b8eb29
 * DuckLake by DuckDB Labs: https://www.ssp.sh/brain/ducklake/
+* [SwanLake](https://github.com/swanlake-io/swanlake/): an Arrow Flight SQL server backed by DuckDB, enabling fast data analytics and ingestion with datalake support.
