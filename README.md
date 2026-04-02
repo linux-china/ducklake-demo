@@ -94,6 +94,7 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 # References
 
 * [DuckLake](https://ducklake.select/)
+* DuckLake: The Definitive Guide - https://learning.oreilly.com/library/view/ducklake-the-definitive/0642572317607/
 * Welcome to the age of $10/month Lakehouses: https://tobilg.com/the-age-of-10-dollar-a-month-lakehouses
 * Learn How to Use DuckLake with DuckDB to Build Datalakes on
   S3: https://medium.com/@shahsoumil519/learn-how-to-use-ducklake-with-duckdb-to-build-iceberg-tables-on-s3-274ca0495261
@@ -126,3 +127,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * How to Create Your Own Vector Data Warehouse with Ducklake: Part 2- Deployment: https://towardsdev.com/how-to-create-your-own-vector-data-warehouse-with-ducklake-part-2-deployment-5af459b8eb29
 * DuckLake by DuckDB Labs: https://www.ssp.sh/brain/ducklake/
 * [SwanLake](https://github.com/swanlake-io/swanlake/): an Arrow Flight SQL server backed by DuckDB, enabling fast data analytics and ingestion with datalake support.
+* SwanLake: An Arrow Flight SQL Datalake Service Built on DuckDB + DuckLake https://www.wangfenjin.com/posts/swanlake-en/
