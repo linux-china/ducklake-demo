@@ -5,12 +5,12 @@ description = "DuckLake demo with PostgreSQL and MinIO"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "duckdb>=1.4.0",
+    "duckdb>=1.5.1",
 ]
 
 [dependency-groups]
 dev = [
-    "pip>=25.2",
-    "pytest>=8.4.2",
-    "setuptools>=80.9.0",
+    "pip>=26.0",
+    "pytest>=9.0",
+    "setuptools>=82.0",
 ]
