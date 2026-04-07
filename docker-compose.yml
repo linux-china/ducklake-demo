@@ -16,3 +16,12 @@ services:
       MINIO_ROOT_USER: minioadmin
       MINIO_ROOT_PASSWORD: minioadmin
     command: server --console-address ":9001" /data
+  s3mock:
+    image: adobe/s3mock:latest
+    ports:
+      - "19090:9090"
+      - "19091:9091"
+    environment:
+      COM_ADOBE_TESTING_S3MOCK_STORE_INITIAL_BUCKETS: test-bucket
+      COM_ADOBE_TESTING_S3MOCK_STORE_ROOT: containers3root
+      COM_ADOBE_TESTING_S3MOCK_STORE_RETAIN_FILES_ON_EXIT: true
