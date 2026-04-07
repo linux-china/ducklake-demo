@@ -70,16 +70,41 @@ secret ducklake_oss (
        url_style 'path'
 );
 
-CREATE
-SECRET catalog1 (
+-- secret for s3mock
+CREATE OR REPLACE SECRET aliyun_oss_secret (
+    TYPE s3,
+    PROVIDER config,
+    KEY_ID 'foo',
+    SECRET 'bar',
+    ENDPOINT '127.0.0.1:19090',
+    URL_STYLE 'path',
+    USE_SSL false,
+    REGION 'us-east-1',
+    SCOPE 's3://test-bucket/'
+);
+
+-- secret for aliyun oss
+CREATE OR REPLACE SECRET aliyun_oss_secret (
+    TYPE s3,
+    PROVIDER config,
+    KEY_ID 'xxx',
+    SECRET 'yyy',
+    ENDPOINT 'oss-cn-hangzhou.aliyuncs.com',
+    URL_STYLE 'vhost',
+    REGION 'oss-cn-hangzhou',
+    SCOPE 's3://duckdb-oss/'
+);
+
+-- catalog with postgresql
+CREATE SECRET catalog1 (
 	TYPE DUCKLAKE,
 	METADATA_PATH 'postgres:dbname=ducklake host=127.0.0.1 port=55432 user=ducklake password=123456',
 	DATA_PATH 's3://lake1',
     METADATA_SCHEMA 'ducklake'
 );
-
-ATTACH
-'ducklake:catalog1' AS catalog1;
+       
+-- attach ducklake
+ATTACH 'ducklake:catalog1' AS catalog1;
 
 ```
 
@@ -128,3 +153,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * DuckLake by DuckDB Labs: https://www.ssp.sh/brain/ducklake/
 * [SwanLake](https://github.com/swanlake-io/swanlake/): an Arrow Flight SQL server backed by DuckDB, enabling fast data analytics and ingestion with datalake support.
 * SwanLake: An Arrow Flight SQL Datalake Service Built on DuckDB + DuckLake https://www.wangfenjin.com/posts/swanlake-en/
+* Data Inlining in DuckLake: Unlocking Streaming for Data Lakes: https://ducklake.select/2026/04/02/data-inlining-in-ducklake/
