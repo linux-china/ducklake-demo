@@ -3,7 +3,7 @@ DuckLake demo
 
 DuckLake is an integrated data lake and catalog format.
 
-![DuckLake Specification](https://ducklake.select/images/manifesto/ducklake-schema-1.png)
+![DuckLake Specification](ducklake-schema.png)
 
 DuckLake architecture:
 
