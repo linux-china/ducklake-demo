@@ -154,3 +154,4 @@ refer [Add support for using secrets to manage DuckLake options and credentials]
 * [SwanLake](https://github.com/swanlake-io/swanlake/): an Arrow Flight SQL server backed by DuckDB, enabling fast data analytics and ingestion with datalake support.
 * SwanLake: An Arrow Flight SQL Datalake Service Built on DuckDB + DuckLake https://www.wangfenjin.com/posts/swanlake-en/
 * Data Inlining in DuckLake: Unlocking Streaming for Data Lakes: https://ducklake.select/2026/04/02/data-inlining-in-ducklake/
+* The DuckLake Spec is so Simple, Even a Clanker Can Build One for Dataframes: https://ducklake.select/2026/05/04/ducklake-dataframe/
