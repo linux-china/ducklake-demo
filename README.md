@@ -3,6 +3,12 @@ DuckLake demo
 
 DuckLake is an integrated data lake and catalog format.
 
+DuckLake Three-Component Architecture:
+
+* The catalog manages metadata: table definitions, schema evolution, transaction history, and references to physical data files
+* The storage layer manages the data itself: typically large, immutable files that must scale efficiently as data volume grows
+* The compute layer executes queries: reading metadata from the catalog and data from storage to produce results
+
 ![DuckLake Specification](ducklake-schema.png)
 
 DuckLake architecture:
